@@ -15,7 +15,7 @@ let input = document.querySelector('input')
 
 function search(){
     for (let i = 0; i < contact.length; i++) {
-        if (input.value === contact[i].name) {
+        if (input.value.toLowerCase() === contact[i].name.toLowerCase()) {
             p.innerHTML = `Contato Encontrado Nome:${contact[i].name} Tel:${contact[i].number}`
             break
         } else {
